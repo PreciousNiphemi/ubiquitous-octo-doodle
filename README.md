@@ -37,6 +37,22 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### PAGE LOAD TIME
+
+Calculated Load time with Window.onload function to check when the page has loaded. I subtracted the time the after the page load from the time before the page load to get the page load time.
+This is done using the new Date.getTime() object
+
+### CHANGES TO OPTIMISE APP
+
+[] I use lazy loading for code splitting to ensure the app load just the things currently needed by the user.
+[] I used useMemo to memoize some constant values that might persist.
+
+### TODO: Things That could be done different.
+
+[] Integrate SQLite with react to increase performance and enable better queries. This give user freedom queries.
+[] Implement history feature. User can check previous results of previous queries instead of running the same queries again. This will readuce load time of the app.
+[] Manage data in a better way. Implement search algorithm to fetch result faster.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
